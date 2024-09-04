@@ -1,0 +1,24 @@
+Question 1 : What do you understand By Database?
+
+A database is an organized collection of data that is stored and accessed electronically. In the context of SQL (Structured Query Language), a database is a system that stores and manages data in a structured format, typically using tables. SQL is the standard language used to interact with relational databases, allowing users to perform various operations such as querying, updating, inserting, and deleting data.
+
+Key Concepts in SQL Databases:
+Tables: The fundamental building blocks of a relational database. A table consists of rows and columns, where each row represents a record, and each column represents an attribute of the data.
+
+Schema: Defines the structure of the database, including the tables, columns, data types, and relationships between tables.
+
+Primary Key: A unique identifier for each record in a table, ensuring that each entry is distinct.
+
+Foreign Key: A field in one table that links to the primary key in another table, establishing a relationship between the two tables.
+
+Queries: SQL commands used to retrieve data from the database. The SELECT statement is the most commonly used SQL query.
+
+Transactions: A sequence of operations performed as a single logical unit of work, ensuring data integrity. Transactions typically follow the ACID properties (Atomicity, Consistency, Isolation, Durability).
+
+Indexes: Structures that improve the speed of data retrieval operations on a database table, at the cost of additional storage space.
+
+Normalization: The process of organizing data to reduce redundancy and improve data integrity.
+
+Views: Virtual tables created by a query. Views do not store data themselves but display data from one or more tables based on a query.
+
+Stored Procedures: Precompiled collections of SQL statements that can be executed as a single unit.

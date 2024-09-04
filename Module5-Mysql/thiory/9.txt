@@ -1,0 +1,36 @@
+question 9 :What is save Point? How to create a save Point write a Query?
+
+-->SAVEPOINT creates points within the groups of transactions in which to ROLLBACK. 
+A SAVEPOINT is a point in a transaction in which you can roll the transaction back to a certain point without
+rolling back the entire transaction. 
+
+-->A SAVEPOINT is a point in a transaction in which you can roll the transaction back to a certain point without
+ rolling back the entire transaction. Syntax for Savepoint command: SAVEPOINT SAVEPOINT_NAME; 
+This command is used only in the creation of SAVEPOINT among all the transactions.
+Syntax for Savepoint command: 
+
+SAVEPOINT SAVEPOINT_NAME;
+
+This command is used only in the creation of SAVEPOINT among all the transactions. 
+In general ROLLBACK is used to undo a group of transactions. 
+
+Syntax for rolling back to Savepoint Command: 
+
+ROLLBACK TO SAVEPOINT_NAME;
+
+you can ROLLBACK to any SAVEPOINT at any time to return the appropriate data to its original state.
+
+Example: 
+
+From the above example Sample table1, Delete those records from the table 
+which have age = 20 and then ROLLBACK the changes in the database by keeping Savepoints. 
+
+Query
+SAVEPOINT SP1;
+//Savepoint created.
+DELETE FROM Student WHERE AGE = 20;
+//deleted
+SAVEPOINT SP2;
+//Savepoint created.
+Here SP1 is first SAVEPOINT created before deletion.In this example one deletion have taken place. 
+After deletion again SAVEPOINT SP2 is created. 

@@ -1,0 +1,48 @@
+Question 4 :What is MF Cod Rule of RDBMS Systems?
+The "Codd's Rules" are a set of 12 rules (numbered 0 to 12) proposed by Edgar F. Codd, a British computer scientist who is considered the father of the relational database model. These rules define what is required for a database management system to be considered a true Relational Database Management System (RDBMS).
+
+Here's an overview of Codd's 12 rules:
+
+Rule 0: Foundation Rule
+Requirement: For a system to be considered an RDBMS, it must be able to manage data entirely through its relational capabilities.
+Explanation: The system must use relational principles, and all data must be accessible through relational means.
+Rule 1: Information Rule
+Requirement: All information in the database is to be represented explicitly at the logical level in tables.
+Explanation: Data must be stored in tables, and these tables should be the only way data is represented.
+Rule 2: Guaranteed Access Rule
+Requirement: Each data item (atomic value) must be accessible by a combination of table name, primary key, and column name.
+Explanation: There must be a straightforward way to access any piece of data in the database.
+Rule 3: Systematic Treatment of NULL Values
+Requirement: The RDBMS must support NULL values (unknown or inapplicable information) and distinguish them from empty or default values.
+Explanation: The system should handle NULL values consistently and systematically.
+Rule 4: Dynamic Online Catalog Based on the Relational Model
+Requirement: The database’s metadata (catalog) must be stored in the database itself, allowing users to query it like any other data.
+Explanation: The system’s metadata should be stored in relational tables and accessible using SQL.
+Rule 5: Comprehensive Data Sublanguage Rule
+Requirement: The RDBMS must support at least one language that can define data structures, manipulate data, and enforce integrity constraints.
+Explanation: The system should provide a full-featured language, typically SQL, that allows for all aspects of data management.
+Rule 6: View Updating Rule
+Requirement: All views (virtual tables) that are theoretically updatable must be updatable by the system.
+Explanation: If a view logically can be updated, the system should allow users to update it.
+Rule 7: High-level Insert, Update, and Delete
+Requirement: The RDBMS must support set-level operations (inserting, updating, deleting) rather than just row-by-row operations.
+Explanation: Users should be able to manipulate multiple rows of data at once using the system’s query language.
+Rule 8: Physical Data Independence
+Requirement: Changes to the physical level (how data is stored) must not require changes to the application or queries at the logical level.
+Explanation: The system should separate the physical storage of data from its logical structure, so that modifications to storage do not impact how users interact with the data.
+Rule 9: Logical Data Independence
+Requirement: Changes to the logical structure (tables) must not require changes to the application or queries.
+Explanation: The system should allow modifications to the database schema without requiring changes to applications using the data.
+Rule 10: Integrity Independence
+Requirement: Integrity constraints must be stored in the database catalog and be independent of the application programs.
+Explanation: The system should enforce integrity constraints (like primary keys, foreign keys) independently of the application, allowing them to be modified without altering applications.
+Rule 11: Distribution Independence
+Requirement: The RDBMS should operate independently of whether the database is distributed across multiple locations or not.
+Explanation: The system should allow data distribution across different physical locations without impacting how users interact with the data.
+Rule 12: Non-subversion Rule
+Requirement: If the system provides a low-level interface, it must not be able to bypass the integrity rules and constraints defined at the higher level.
+Explanation: The system should ensure that integrity constraints cannot be violated, even if low-level operations are performed.
+Summary:
+Codd's rules define what a database management system must do to be considered a true RDBMS. These rules emphasize the importance of maintaining the relational nature of the system, supporting data integrity, 
+providing a comprehensive and powerful query language, and ensuring independence between different levels of the database system (physical, logical, and view). Although no commercial RDBMS fully satisfies all of C
+odd’s rules, they serve as an ideal standard for relational database systems.

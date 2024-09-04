@@ -1,0 +1,33 @@
+Question 2 : What is Normalization?
+
+Normalization is a database design process used to organize data within a relational database to reduce redundancy and improve data integrity. The goal of normalization is to ensure that the database structure is efficient and that it supports the accurate and consistent storage of data.
+
+Key Objectives of Normalization:
+Eliminate Redundant Data: By organizing data into separate tables and establishing relationships between them, normalization reduces duplicate data. This helps in saving storage space and maintaining consistency in the database.
+
+Ensure Data Integrity: By structuring data in a way that enforces data integrity rules (like primary keys and foreign keys), normalization ensures that the data stored in the database is accurate and reliable.
+
+Simplify Data Structure: Normalization simplifies the design of the database by breaking down complex tables into simpler, smaller tables, which are easier to manage and update.
+
+Normal Forms:
+Normalization is typically done in stages, known as "normal forms." Each stage builds on the previous one, ensuring a more refined and optimized database structure.
+
+First Normal Form (1NF):
+
+Ensures that each column in a table contains atomic (indivisible) values, and each entry in a column is of the same data type.
+Each record must be unique, typically enforced by a primary key.
+Second Normal Form (2NF):
+
+Achieved by ensuring the table is in 1NF and that all non-key attributes are fully functionally dependent on the primary key. This means that each non-key column should depend on the entire primary key, not just part of it.
+Third Normal Form (3NF):
+
+Achieved by ensuring the table is in 2NF and that all non-key attributes are not only dependent on the primary key but also independent of each other. This removes transitive dependency, where one non-key attribute depends on another non-key attribute.
+Boyce-Codd Normal Form (BCNF):
+
+A stronger version of 3NF. A table is in BCNF if it is in 3NF, and every determinant (an attribute that can determine other attributes) is a candidate key.
+Fourth Normal Form (4NF):
+
+Achieved by ensuring the table is in BCNF and that it has no multi-valued dependencies, where one attribute determines a set of values for another attribute.
+Fifth Normal Form (5NF):
+
+Ensures that the table is in 4NF and that there are no join dependencies that can lead to the loss of data integrity when tables are joined.

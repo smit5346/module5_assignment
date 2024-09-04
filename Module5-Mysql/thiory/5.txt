@@ -1,0 +1,16 @@
+question 5 :What do you understand By Data Redundancy?
+
+-->Data redundancy can be useful for data security and backup, and can help ensure data accuracy,
+ improve data protection, and increase data availability. For example, if a server fails, you can restore
+ lost information using existing backups. However, data redundancy can also lead to problems, such as:
+Wasted resources, Slower query times, Inconsistent data, and Data loss. 
+-->Here are some examples of how data redundancy can lead to problems: 
+--Insertion anomaly
+When you insert a new customer with an order, you might need to insert the same address in both the "Customers" and "Orders" tables. 
+--Updation anomaly
+When you update data in one location but not in all locations, the data can become inconsistent. For example, if you update a customer's address in only one table, the data will be inconsistent. 
+--Deletion anomaly
+-->Data redundancy in RDBMS (relational database management system) is when the same data is stored in more than
+one place within a database. This can happen within a single database or across multiple data systems. 
+When you delete a record, some data might be lost if it's stored redundantly. 
+To avoid data redundancy, you can design your database's architecture to make it easier to identify and remove repetition. For example, you can use relational databases to link tables and match records. You can also use normalization, which is a process that involves creating tables and establishing relationships between them to eliminate redundancy. 

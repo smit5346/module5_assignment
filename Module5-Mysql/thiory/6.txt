@@ -1,0 +1,10 @@
+question 6 :What is DDL Interpreter?
+
+-->DDL Interpreter: It interprets the DDL (Data Definition Language) Instructions and stores the record 
+in a data dictionary (in a table containing meta-data) Query Optimizer: It executes the DML Instructions 
+and picks the lowest cost evaluation plan out of all the alternatives present.
+-->A Data Definition Language (DDL) interpreter changes DDL statements into a format that the storage manager
+ can understand. It also stores the record in a data dictionary, which is a table that contains meta-data. 
+-->DDL is a computer language that's used to build and change the structure of database objects, 
+such as tables, views, indexes, and schemas. DDL statements can create, modify, and remove these objects,
+ and can also impose or drop constraints on tables. Some common DDL commands include CREATE, ALTER, DROP, TRUNCATE, and RENAME

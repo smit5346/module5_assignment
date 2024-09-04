@@ -1,0 +1,54 @@
+question 10 : What is trigger and how to create a Trigger in SQL?
+
+In this article, you will learn about the trigger and its implementation with examples.
+
+-->A trigger in SQL is a special kind of stored procedure that automatically executes in
+ response to certain events on a particular table or view. Triggers can be used to enforce business rules,
+ validate data, maintain audit trails, and automate system tasks.
+
+-->A Trigger in Structured Query Language is a set of procedural statements which are executed automatically when there is any response to certain events on the particular table in the database.
+ Triggers are used to protect the data integrity in the database.
+
+In SQL, this concept is the same as the trigger in real life. For example, when we pull the gun trigger, the bullet is fired.
+
+-->To understand the concept of trigger in SQL, let's take the below hypothetical situation:
+Suppose Rishabh is the human resource manager in a multinational company. 
+When the record of a new employee is entered into the database, he has to send the 'Congrats' message to each new employee.
+ If there are four or five employees, Rishabh can do it manually, but if the number of new Employees is more than the thousand, then in such condition, he has to use the trigger in the database.
+
+-->Thus, now Rishabh has to create the trigger in the table, which will automatically send a 'Congrats' message to the new employees once their record is inserted into the database.
+
+-->The trigger is always executed with the specific table in the database. If we remove the table, all the triggers associated with that table are also deleted automatically.
+
+-->In Structured Query Language, triggers are called only either before or after the below events:
+
+INSERT Event: This event is called when the new row is entered in the table.
+UPDATE Event: This event is called when the existing record is changed or modified in the table.
+DELETE Event: This event is called when the existing record is removed from the table.
+Types of Triggers in SQL
+
+-->Following are the six types of triggers in SQL:
+AFTER INSERT Trigger
+This trigger is invoked after the insertion of data in the table.
+AFTER UPDATE Trigger
+This trigger is invoked in SQL after the modification of the data in the table.
+AFTER DELETE Trigger
+This trigger is invoked after deleting the data from the table.
+BEFORE INSERT Trigger
+This trigger is invoked before the inserting the record in the table.
+BEFORE UPDATE Trigger
+This trigger is invoked before the updating the record in the table.
+BEFORE DELETE Trigger
+This trigger is invoked before deleting the record from the table.
+
+-->Syntax of Trigger in SQL
+CREATE TRIGGER Trigger_Name  
+[ BEFORE | AFTER ]  [ Insert | Update | Delete]  
+ON [Table_Name]  
+[ FOR EACH ROW | FOR EACH COLUMN ]  
+AS  
+Set of SQL Statement  
+
+-->In the trigger syntax, firstly, we have to define the name of the trigger after the CREATE TRIGGER keyword. 
+After that, we have to define the BEFORE or AFTER keyword with anyone event.
+

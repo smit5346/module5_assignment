@@ -1,0 +1,49 @@
+Question 3 : What is Difference between DBMS and RDBMS?
+The terms DBMS (Database Management System) and RDBMS (Relational Database Management System) both refer to systems for managing databases, but they differ in their structure, functionalities, and how they handle data. Here's a comparison:
+
+1. Data Structure:
+DBMS:
+Manages databases that may or may not be relational.
+Data is typically stored in files, which could be in formats like hierarchical, network, or flat files.
+RDBMS:
+Manages relational databases, where data is stored in tables with rows and columns.
+Each table has a unique key (primary key) and can establish relationships with other tables via foreign keys.
+2. Data Relationships:
+DBMS:
+Does not enforce relationships between tables or data structures. Relationships must be handled manually or via application logic.
+RDBMS:
+Enforces relationships between tables using foreign keys and supports operations like JOIN to combine data from related tables.
+3. Data Integrity:
+DBMS:
+May not enforce strong data integrity constraints. It's up to the user or application to ensure data integrity.
+RDBMS:
+Enforces data integrity through constraints like primary keys, foreign keys, unique keys, and checks. These constraints ensure consistency and accuracy of data.
+4. Normalization:
+DBMS:
+Does not necessarily support normalization, as it can store data in various formats.
+RDBMS:
+Supports normalization, which helps reduce data redundancy and improves data integrity by organizing data into related tables.
+5. Support for ACID Properties:
+DBMS:
+May not fully support ACID (Atomicity, Consistency, Isolation, Durability) properties, making it less reliable for complex transaction management.
+RDBMS:
+Fully supports ACID properties, ensuring that transactions are processed reliably and data integrity is maintained even in case of failures.
+6. Query Language:
+DBMS:
+May use a variety of query languages depending on the database type, which could be proprietary or less standardized.
+RDBMS:
+Uses SQL (Structured Query Language) as the standard language for querying and managing data, providing a uniform way to interact with the database.
+7. Scalability:
+DBMS:
+Typically used for smaller, less complex databases, as it may not efficiently handle large volumes of data or complex queries.
+RDBMS:
+Designed to handle large volumes of data and complex queries, making it suitable for enterprise-level applications.
+8. Examples:
+DBMS:
+Examples include file systems, XML databases, and some legacy systems like IBM IMS.
+RDBMS:
+Examples include MySQL, PostgreSQL, Oracle, Microsoft SQL Server, and SQLite.
+Summary:
+DBMS is a broader category that includes any system for managing databases, regardless of the data model used.
+RDBMS is a specific type of DBMS that uses the relational model to store data in tables with relationships, supporting SQL and ensuring data integrity through normalization and constraints.
+In modern database management, RDBMS is the most widely used due to its ability to handle complex data relationships and ensure data integrity.
